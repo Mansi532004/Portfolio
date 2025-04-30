@@ -12,6 +12,10 @@ body{                                   /* Body of the page */
     justify-content: space-between;
     flex-wrap: wrap;
 }
+.myimg{
+    width: 42%;
+    height: 100%;
+}
 #profilepic{                            /* Profile Picture */ 
     height: 100vh;
     max-width: 100%;
@@ -65,7 +69,7 @@ nav ul li a:hover::after{               /* Hover effect on underline of links in
     left: 0;
 }
 .hometext{                              /* Text on home page */
-    height:55%;
+    height:65%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -150,6 +154,7 @@ nav ul li a:hover::after{               /* Hover effect on underline of links in
     width: 70%;
     border-radius: 15px;
     margin-right:50px;
+    box-shadow: 4px 4px 5px #677c59, -4px 4px 5px #677c59, 4px -4px 5px #677c59, -4px -4px 5px #677c59;
 }
 .tab-titles{                            /* Tab titles in About Section */
     display: flex;
