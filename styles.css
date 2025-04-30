@@ -1,0 +1,194 @@
+*{                                      /* Universally applied to whole page */        
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{                                   /* Body of the page */ 
+    background: linear-gradient(to bottom, #f5f5d5, #a3b68a); 
+}
+.container{                             /* Properties for all the container divs */  
+    margin:10px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#profilepic{                            /* Profile Picture */ 
+    height: 100vh;
+    max-width: 100%;
+}
+#logo{                                  /* Logo of the website */
+    width: 10vw;
+    height: 20vh;
+}
+.navigation{                            /* Container div for navigation bar and hometext */
+    width: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{                                    /* Navigation Bar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{                              /* Tabs in Navigation Bar */
+    display: inline-block;
+    margin: 0px 15px;
+    list-style: none;
+}  
+nav ul li a{                             /* Links in Navigation Bar */
+    display: inline-block;
+    position:relative;
+    text-decoration: none;
+    font-weight: bold;
+    color: #354a2f;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: all 0.5s ease-in-out;
+}
+nav ul li a:hover{                       /* Hover effect on links in Navigation Bar */
+    transform: scale(1.1);
+} 
+nav ul li a::after{                     /* Underline effect on links in Navigation Bar */
+    content: '';
+    position:absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background: #354a2f;
+    transition: all 0.5s ease-in-out;
+}
+nav ul li a:hover::after{               /* Hover effect on underline of links in Navigation Bar */
+    width: 100%;
+    left: 0;
+}
+.hometext{                              /* Text on home page */
+    height:55%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#intro{                                 /* Introduction text on home page */
+    font-size: 40px;
+    color: #0f2709;
+}
+.hometext p{                            /* Paragraphs in home page */
+    font-size: 20px;
+}
+.homebuttons{                           /* Buttons on home page */
+    display: flex;
+    justify-content: start;
+    margin-top: 30px;
+    gap: 20px;
+}
+#contactbtn{                            /* Contact Me button */
+    background-color: #354a2f;
+    color: white;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width:40%;
+}
+#contactbtn:hover{                      /* Hover effect on Contact Me button */
+    background-color: #2a3b1f;
+    transform: translateY(-5px);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 4px 4px 5px #677c59;
+}
+#cvbtn{                                 /* Download CV button */
+    background-color: #354a2f;
+    color: white;
+    padding: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    width:40%;
+}
+#cvbtn:hover{                           /* Hover effect on Download CV button */  
+    background-color: #2a3b1f;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 5px #677c59;
+}
+/*----------------------About Section -------------------------*/
+#about{                                 /* About Section */
+    padding: 80px 0px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 500px;;
+}
+.abtcol-1{                              /* Left Column of About Section */
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+.abtcol-2{                              /* Right Column of About Section */
+    flex-basis: 60%;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    padding-right: 8%;
+    height: 100%;
+}
+.about-text{                            /* Paragraph in Right Column of About Section */
+    font-size: 20px;
+    color: #0f2709;
+}
+.abtcol-1 img{                          /* Image in Left Column of About Section */
+    width: 70%;
+    border-radius: 15px;
+    margin-right:50px;
+}
+.tab-titles{                            /* Tab titles in About Section */
+    display: flex;
+    margin: 20px 0 10px 0;
+}
+.tab-links{                             /* Links of tabs in About Section */
+    margin-right: 50px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{                      /* Underline effect on tab links in About Section */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: #354a2f;
+    transition: all 0.2s ease-in;
+}
+.tab-links.active-link::after{          /* Active tab effect */
+    width: 50%;
+}
+.tab-links:hover::after{                /* Hover effect on tab links in About Section */
+    width: 50%;
+}
+.tab-content ul li{                     /* List of content in respective tabs */
+    list-style: none;
+    margin: 5px 0;
+}
+.tab-content span{                      /* Content in respective tabs */
+    font-family: 'Poppins', sans-serif;
+}
+.tab-content{                           /* Div for all the content in respective tabs */ 
+    display: none;
+}
+.tab-content.active-tab{                /* Active tab content visibility effect */
+    display: block;
+}
