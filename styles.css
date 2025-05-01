@@ -91,7 +91,7 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
 #contactbtn:hover{                              /* Hover effect on Contact Me button */
     background-color: #2a3b1f;
     transform: translateY(-5px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 4px 4px 5px #677c59;
 }
 #cvbtn{                                         /* Download CV button */
@@ -122,35 +122,34 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
     flex-wrap: wrap;
     height: 500px;
 }
-.abtcol-1{                              /* Left Column of About Section */
+.abtcol-1{                                      /* Left Column of About Section */
     flex-basis: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%;
 }
-.abtcol-2{                              /* Right Column of About Section */
+.abtcol-2{                                      /* Right Column of About Section */
     flex-basis: 60%;
     justify-content: center;
     align-items: center;
     text-align: justify;
     height: 100%;
 }
-.about-text{                            /* Paragraph in Right Column of About Section */
+.about-text{                                    /* Paragraph in Right Column of About Section */
     font-size: 20px;
     color: #0f2709;
 }
-.abtcol-1 img{                          /* Image in Left Column of About Section */
+#aboutimg{                                      /* Image in Left Column of About Section */
     width: 70%;
     border-radius: 15px;
-    margin-right:50px;
     box-shadow: 4px 4px 5px #677c59, -4px 4px 5px #677c59, 4px -4px 5px #677c59, -4px -4px 5px #677c59;
 }
-.tab-titles{                            /* Tab titles in About Section */
+.tab-titles{                                    /* Tab titles in About Section */
     display: flex;
-    margin: 20px 0 10px 0;
+    margin-top: 20px;
 }
-.tab-links{                             /* Links of tabs in About Section */
+.tab-links{                                     /* Links of tabs in About Section */
     margin-right: 50px;
     font-size: 17px;
     font-weight: bold;
@@ -158,7 +157,7 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
     cursor: pointer;
     position: relative;
 }
-.tab-links::after{                      /* Underline effect on tab links in About Section */
+.tab-links::after{                              /* Underline effect on tab links in About Section */
     content: '';
     position: absolute;
     left: 0;
@@ -168,24 +167,24 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
     background: #354a2f;
     transition: all 0.2s ease-in;
 }
-.tab-links.active-link::after{          /* Active tab effect */
+.tab-links.active-link::after{                  /* Active tab effect */
     width: 50%;
 }
-.tab-links:hover::after{                /* Hover effect on tab links in About Section */
+.tab-links:hover::after{                        /* Hover effect on tab links in About Section */
     width: 50%;
 }
-.tab-content ul li{                     /* List of content in respective tabs */
+.tab-content ul li{                             /* List of content in respective tabs */
     list-style: none;
     margin: 5px 0;
 }
-.tab-content span{                      /* Content in respective tabs */
+.tab-content span{                              /* Content in respective tabs */
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
 }
-.tab-content{                           /* Div for all the content in respective tabs */ 
+.tab-content{                                   /* Div for all the content in respective tabs */ 
     display: none;
 }
-.tab-content.active-tab{                /* Active tab content visibility effect */
+.tab-content.active-tab{                        /* Active tab content visibility effect */
     display: block;
 }
 /*----------------------Skills Section -------------------------*/
