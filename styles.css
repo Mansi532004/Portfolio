@@ -1,60 +1,50 @@
-*{                                      /* Universally applied to whole page */        
+*{                                              /* Universally applied to whole page */        
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{                                   /* Body of the page */ 
+body{                                           /* Body of the page */ 
     background: linear-gradient(to bottom, #f5f5d5, #a3b68a); 
 }
-.container{                             /* Properties for all the container divs */  
-    margin:10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-.myimg{
-    width: 42%;
-    height: 100%;
-}
-#profilepic{                            /* Profile Picture */ 
+#home{                                        /* Header of the page */
+    background-image: url(images/about.png);
+    background-size: auto 100%;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%;
     height: 100vh;
-    max-width: 100%;
 }
-#logo{                                  /* Logo of the website */
+.container{                                     /* Properties for all the container divs */  
+    padding: 10px 10%;
+}
+nav{                                            /* Navigation Bar */   
+    display: flex;
+    align-items: start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+#logo{                                          /* Logo of the website */
     width: 10vw;
     height: 20vh;
 }
-.navigation{                            /* Container div for navigation bar and hometext */
-    width: 58%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-nav{                                    /* Navigation Bar */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-nav ul li{                              /* Tabs in Navigation Bar */
+nav ul li{                                      /* Tabs in Navigation Bar */
     display: inline-block;
-    margin: 0px 15px;
-    list-style: none;
 }  
-nav ul li a{                             /* Links in Navigation Bar */
+nav ul li a{                                    /* Links in Navigation Bar */
     display: inline-block;
-    position:relative;
     text-decoration: none;
     font-weight: bold;
     color: #354a2f;
     font-size: 20px;
     padding: 10px 15px;
+    margin: 45px 15px 0;
     transition: all 0.5s ease-in-out;
 }
-nav ul li a:hover{                       /* Hover effect on links in Navigation Bar */
+nav ul li a:hover{                              /* Hover effect on links in Navigation Bar */
     transform: scale(1.1);
 } 
-nav ul li a::after{                     /* Underline effect on links in Navigation Bar */
+nav ul li a::after{                             /* Underline effect on links in Navigation Bar */
     content: '';
     position:absolute;
     left: 50%;
@@ -64,31 +54,31 @@ nav ul li a::after{                     /* Underline effect on links in Navigati
     background: #354a2f;
     transition: all 0.5s ease-in-out;
 }
-nav ul li a:hover::after{               /* Hover effect on underline of links in Navigation Bar */
+nav ul li a:hover::after{                       /* Hover effect on underline of links in Navigation Bar */
     width: 100%;
     left: 0;
 }
-.hometext{                              /* Text on home page */
-    height:65%;
+.hometext{                                      /* Text in home page */                        
     width: 50%;
+    margin-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-#intro{                                 /* Introduction text on home page */
+.hometext h1{                                   /* Introduction text on home page */
     font-size: 40px;
     color: #0f2709;
 }
-.hometext p{                            /* Paragraphs in home page */
+#intro{                                         /* Paragraphs in home page */
     font-size: 20px;
 }
-.homebuttons{                           /* Buttons on home page */
+.homebuttons{                                   /* Buttons on home page */
     display: flex;
     justify-content: start;
     margin-top: 30px;
     gap: 20px;
 }
-#contactbtn{                            /* Contact Me button */
+#contactbtn{                                    /* Contact Me button */
     background-color: #354a2f;
     color: white;
     padding: 10px 0px;
@@ -98,13 +88,13 @@ nav ul li a:hover::after{               /* Hover effect on underline of links in
     font-size: 20px;
     width:40%;
 }
-#contactbtn:hover{                      /* Hover effect on Contact Me button */
+#contactbtn:hover{                              /* Hover effect on Contact Me button */
     background-color: #2a3b1f;
     transform: translateY(-5px);
     transition: all 0.5s ease-in-out;
     box-shadow: 4px 4px 5px #677c59;
 }
-#cvbtn{                                 /* Download CV button */
+#cvbtn{                                         /* Download CV button */
     background-color: #354a2f;
     color: white;
     padding: 10px 0px;
@@ -114,14 +104,15 @@ nav ul li a:hover::after{               /* Hover effect on underline of links in
     font-size: 20px;
     width:40%;
 }
-#cvbtn:hover{                           /* Hover effect on Download CV button */  
+#cvbtn:hover{                                   /* Hover effect on Download CV button */  
     background-color: #2a3b1f;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
     box-shadow: 4px 4px 5px #677c59;
 }
+
 /*----------------------About Section -------------------------*/
-#about{                                 /* About Section */
+#about{                                       
     padding: 80px 0px;
 }
 .row{
@@ -197,3 +188,4 @@ nav ul li a:hover::after{               /* Hover effect on underline of links in
 .tab-content.active-tab{                /* Active tab content visibility effect */
     display: block;
 }
+/*----------------------Skills Section -------------------------*/
