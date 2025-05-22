@@ -58,6 +58,9 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
     width: 100%;
     left: 0;
 }
+h1{                                             /* Color of all Headings in page */
+    color: #253e1e;
+}
 .hometext{                                      /* Text in home page */                        
     width: 50%;
     margin-top: 10%;
@@ -67,7 +70,6 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
 }
 .hometext h1{                                   /* Introduction text on home page */
     font-size: 40px;
-    color: #0f2709;
 }
 #intro{                                         /* Paragraphs in home page */
     font-size: 20px;
@@ -187,4 +189,81 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
 .tab-content.active-tab{                        /* Active tab content visibility effect */
     display: block;
 }
-/*----------------------Skills Section -------------------------*/
+/*----------------------Responsibilities Section -------------------------*/
+#responsibilities{                                 /* Responsibilities Section */
+    padding: 30px 0;
+}
+.responsibilities-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.responsibilities-list div{
+    background-color: #354a2f;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 5px #677c59, 0px 4px 5px #677c59;
+    transition: all 0.5s ease-in-out;
+}
+.responsibilities-list h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.responsibilities-list p{
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.responsibilities-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.responsibilities-list div:hover{
+    box-shadow: -5px 5px 10px #253e1e, -2px 2px 8px #677c59;
+    background: #2a3b1f;
+    transform: translateY(-10px);
+}
+/*----------------------Project Section -------------------------*/
+#project{                                 /*Project Section */
+    padding: 30px 0;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project-list div{
+    background-color: #354a2f;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: -4px 4px 5px #677c59, 0px 4px 5px #677c59;
+    transition: all 0.5s ease-in-out;
+}
+.project-list h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.project-list p{
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+}
+.project-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.project-list div:hover{
+    box-shadow: -5px 5px 10px #253e1e, -2px 2px 8px #677c59;
+    background: #2a3b1f;
+    transform: translateY(-10px);
+}
