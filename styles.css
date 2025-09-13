@@ -115,7 +115,7 @@ h1{                                             /* Color of all Headings in page
 
 /*----------------------About Section -------------------------*/
 #about{                                       
-    margin: 100px 0;
+    margin-top: 90px;
 }
 .row{
     display: flex;
@@ -130,7 +130,7 @@ h1{                                             /* Color of all Headings in page
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    
 }
 .abtcol-2{                                      /* Right Column of About Section */
     flex-basis: 60%;
@@ -193,7 +193,7 @@ h1{                                             /* Color of all Headings in page
 
 /*----------------------Extra-curriculars Section -------------------------*/
 #extra-curriculars{                                 /* Extra-curriculars Section */
-    padding: 50px 0;
+    margin-top: 100px;
 }
 .extra-curriculars-list{
     display: grid;
@@ -233,7 +233,7 @@ h1{                                             /* Color of all Headings in page
 
 /*----------------------Project Section -------------------------*/
 #project{                                 /*Project Section */
-    padding: 100px 0;
+    margin-top: 100px;
 }
 .project-list{
     display: grid;
