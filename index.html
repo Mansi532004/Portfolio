@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="scripts.js" defer></script>
     <title>Mansi Singh Ranawat</title>
 </head>
@@ -16,7 +17,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#extra-curriculars">Extra-curriculars</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#project">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -26,8 +27,12 @@
                 <p id="intro">Welcome to my personal website! <br> I am a passionate web developer with a love for creating beautiful and functional websites. <br> Feel free to explore my portfolio and projects.</p>
 
                 <div class="homebuttons">                   <!-- Buttons for contact and CV download-->
-                    <input type="button" value="Contact Me" id="contactbtn">
-                    <input type="button" value="Download CV" id="cvbtn">
+                    <a href="#contact">
+                        <input type="button" value="Contact Me" id="contactbtn">
+                    </a>
+                    <a href="images/CV.pdf" target="_blank" download>
+                        <input type="button" value="Download CV" id="cvbtn">
+                    </a>
                 </div> 
             </div>
         </div>
@@ -69,7 +74,7 @@
                     </div>
                     <div class="tab-content" id="experience"> <!-- Tab content for the experience section-->
                         <ul>
-                            <li> <span> Fresher </span> </li>
+                            <li> <span> Customer Service Advisor @ WNS </span> </li>
                         </ul>
                     </div>
                 </div>
@@ -109,29 +114,60 @@
                 <div class="project">
                     <img src="images/FCA 1.png" alt="FCA Techtimes 24">
                     <div class="layer">
-                        <h3> FCA Techtimes 2024 </h3>
+                        <h2> FCA Techtimes 2024 </h2>
                         <p> A project showcasing the latest achievements in the department, focusing on innovation and technology. </p>
-                        <a href="#"> </a>
+                        <a href="https://online.fliphtml5.com/nbfhg/hfmm/" target="_blank"> <i class="fa-solid fa-link"></i> </a>
                     </div>
                 </div>
                 <div class="project">
                     <img src="images/FCA 2.png" alt="FCA Techtimes 25">
                     <div class="layer">
-                        <h3> FCA Techtimes 2025 </h3>
+                        <h2> FCA Techtimes 2025 </h2>
                         <p> A project focusing on the budding businessmen using innovative technologies to boost the economy of the country. Highlights the achievements of students on the similar lines. </p>
-                        <a href="#"> </a>
+                        <a href="https://online.fliphtml5.com/pmzhw/ifpw/#p=1" target="_blank"> <i class="fa-solid fa-link"></i> </a>
                     </div>
                 </div>
                 <div class="project">
                     <img src="images/PowerBI.png" alt="PowerBI Project">
                     <div class="layer">
-                        <h3> Profit and Sales Analysis of H&M using PowerBI </h3>
+                        <h2> Profit and Sales Analysis of H&M using PowerBI </h2>
                         <p> Microsoft PowerBI project to analyse profit and sales, the two most important components of any business. </p>
-                        <a href="#"> </a>
+                        <a href="images/MansiProject.pbix" target="_blank"> <i class="fa-solid fa-link"></i> </a>
                     </div>
                 </div>
             </div>
         </div>
     </div> <!-- End of projects section-->
+<!------------------Contact Section Begins---------------------->
+    <div id="contact"> 
+        <div class="container">                 <!-- Container for the contact section-->
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle"> Contact Me </h1>
+                    <p> <i class="fa-regular fa-envelope"></i> mansiranawat532004@gmail.com </p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 62647 55784</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/mansi-singh-ranawat" target="_blank"> <i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://github.com/Mansi532004" target="_blank"> <i class="fa-brands fa-github"></i> </a>
+                        <a href="https://www.instagram.com/mansi_.ranawat/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea> <br>
+                        <button type="submit" id="btn"> Submit </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div> <!-- End of contact section-->
+    <div class="quote">
+                <h2> "The best way to predict the future is to create it." - Peter Drucker </h2>
+    </div>
+    <a href="#home" class="back-to-home" title="Back to Home">
+    <i class="fa-solid fa-house-chimney"></i>
+    </a>
 </body>
 </html>

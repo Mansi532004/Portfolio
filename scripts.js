@@ -11,3 +11,15 @@ var tablinks = document.getElementsByClassName("tab-links"); // Get all tab link
         event.currentTarget.classList.add("active-link"); // Add active class to the clicked link
         document.getElementById(tabname).classList.add("active-tab"); // Add active class to the corresponding content
     }
+
+window.addEventListener('scroll', function() {
+    const backToHome = document.querySelector('.back-to-home');
+    const homeSection = document.getElementById('home');
+    const homeHeight = homeSection.offsetHeight;
+
+    if (window.scrollY > homeHeight - 50) {
+        backToHome.classList.add('visible');
+    } else {
+        backToHome.classList.remove('visible');
+    }
+});

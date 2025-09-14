@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+}
 body{                                           /* Body of the page */ 
     background: linear-gradient(to bottom, #f5f5d5, #a3b68a); 
 }
@@ -83,12 +86,11 @@ h1{                                             /* Color of all Headings in page
 #contactbtn{                                    /* Contact Me button */
     background-color: #354a2f;
     color: white;
-    padding: 10px 0px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 20px;
-    width:40%;
 }
 #contactbtn:hover{                              /* Hover effect on Contact Me button */
     background-color: #2a3b1f;
@@ -99,12 +101,11 @@ h1{                                             /* Color of all Headings in page
 #cvbtn{                                         /* Download CV button */
     background-color: #354a2f;
     color: white;
-    padding: 10px 0px;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-size: 20px;
-    width:40%;
 }
 #cvbtn:hover{                                   /* Hover effect on Download CV button */  
     background-color: #2a3b1f;
@@ -116,6 +117,10 @@ h1{                                             /* Color of all Headings in page
 /*----------------------About Section -------------------------*/
 #about{                                       
     margin-top: 90px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 .row{
     display: flex;
@@ -194,6 +199,10 @@ h1{                                             /* Color of all Headings in page
 /*----------------------Extra-curriculars Section -------------------------*/
 #extra-curriculars{                                 /* Extra-curriculars Section */
     margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 .extra-curriculars-list{
     display: grid;
@@ -234,6 +243,10 @@ h1{                                             /* Color of all Headings in page
 /*----------------------Project Section -------------------------*/
 #project{                                 /*Project Section */
     margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
 }
 .project-list{
     display: grid;
@@ -246,11 +259,169 @@ h1{                                             /* Color of all Headings in page
     position: relative;
     overflow: hidden;
 }
+.project:hover img{                       /* Hover effect on image in Project Section */
+    transform: scale(1.1);
+}
+.project:hover .layer{                   /* Hover effect on overlay in Project Section */
+    height: 100%;
+}
 .project img{                                   /* Image in Project Section */
     width: 100%;
     border-radius: 10px;
     display: block;
     height: 400px;
     object-fit: cover;
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgb(6, 44, 3),#aec398);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s ease-in-out;
+    color:#ffffff;
+}
+.layer h2{
+    text-align: center;
+}
+.layer p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.layer a{
+    margin-top: 15px;
+    color:#2c3a15;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 60px;
+    background: #96bc7e;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+/*----------------------Contact Section -------------------------*/
+#contact{                                 
+    margin-top: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+.contact-left{
+    flex-basis:45%;
+}
+.contact-right{
+    flex-basis:50%;
+}
+.contact-left p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+.contact-left p i{
+    color: #354a2f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+h1.subtitle{                                      /* Subtitle in Contact Section */
+    margin-bottom: 60px;
+    font-size: 40px;
+}
+#btn{                                    /* Contact Me button */
+    background-color: #354a2f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+}
+#btn:hover{                              /* Hover effect on Contact Me button */
+    background-color: #2a3b1f;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 4px 4px 5px #677c59;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    color: #354a2f;
+    font-size: 30px;
+    margin-right: 15px;
+    display: inline-block;
+}
+.social-icons a:hover{
+    color: #2a3b1f;
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
+.contact-right form{
+    width: 100%;
+}
+::placeholder{
+        color: #354a2f;
+        opacity: 1; 
+}
+form input, form textarea{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #032c09;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    resize: none;
+    background-color: #96bc7e;
+}
+.quote{
+    width:100%;
+    text-align: center;
+    padding: 20px 0;
+    background: #253e1e;
+    color: antiquewhite;
+    font-weight: 200;
+}
+.back-to-home {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 50px;
+    height: 50px;
+    background: #253e1e;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    font-size: 24px;
+    z-index: 1000;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(40px);
+    transition: opacity 0.4s, transform 0.4s;
+}
+.back-to-home.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.back-to-home:hover {
+    background: #354a2f;
+    transform: scale(1.1);
 }
