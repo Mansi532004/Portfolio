@@ -474,7 +474,7 @@ nav .fa-bars, nav ul .fa-circle-xmark {
         display: block;
     }
     nav ul{
-        background: #677c59;
+        background: rgba(103, 124, 89, 0.8);
         position: fixed;
         top: 0;
         left: -200px;
