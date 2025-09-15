@@ -23,3 +23,27 @@ window.addEventListener('scroll', function() {
         backToHome.classList.remove('visible');
     }
 });
+
+const menuToggle = document.getElementById('menu');
+const sidemenu = document.getElementById('sidemenu');
+
+menuToggle.addEventListener('click', function() {
+    sidemenu.classList.toggle('open');
+    // Toggle icon between bars and xmark
+    if (sidemenu.classList.contains('open')) {
+        menuToggle.classList.remove('fa-bars');
+        menuToggle.classList.add('fa-circle-xmark');
+    } else {
+        menuToggle.classList.remove('fa-circle-xmark');
+        menuToggle.classList.add('fa-bars');
+    }
+});
+
+// Optional: Close menu when a link is clicked (for better UX)
+document.querySelectorAll('#sidemenu a').forEach(link => {
+    link.addEventListener('click', () => {
+        sidemenu.classList.remove('open');
+        menuToggle.classList.remove('fa-circle-xmark');
+        menuToggle.classList.add('fa-bars');
+    });
+});
