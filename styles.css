@@ -7,7 +7,8 @@ html {
     scroll-behavior: smooth;
 }
 body{                                           /* Body of the page */ 
-    background: linear-gradient(to bottom, #f5f5d5, #a3b68a); 
+    background: linear-gradient(to bottom, #f5f5d5, #a3b68a);
+    overflow-y: scroll;
 }
 #home{                                          /* Header of the page */
     background-image: url(images/about.png);
@@ -155,7 +156,10 @@ h1{                                             /* Color of all Headings in page
 }
 .tab-titles{                                    /* Tab titles in About Section */
     display: flex;
-    margin-top: 20px;
+    margin: 20px 0;
+}
+.tab-titles p{
+    font-size: 18px;
 }
 .tab-links{                                     /* Links of tabs in About Section */
     margin-right: 50px;
@@ -187,7 +191,7 @@ h1{                                             /* Color of all Headings in page
 }
 .tab-content span{                              /* Content in respective tabs */
     font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-size: 18px;
 }
 .tab-content{                                   /* Div for all the content in respective tabs */ 
     display: none;
@@ -197,7 +201,7 @@ h1{                                             /* Color of all Headings in page
 }
 
 /*----------------------Extra-curriculars Section -------------------------*/
-#extra-curriculars{                                 /* Extra-curriculars Section */
+#extra-curriculars{                             /* Extra-curriculars Section */
     margin-top: 100px;
     height: 100vh;
     display: flex;
@@ -241,7 +245,7 @@ h1{                                             /* Color of all Headings in page
 }
 
 /*----------------------Project Section -------------------------*/
-#project{                                 /*Project Section */
+#project{                                       /*Project Section */
     margin-top: 100px;
     height: 100vh;
     display: flex;
@@ -259,10 +263,10 @@ h1{                                             /* Color of all Headings in page
     position: relative;
     overflow: hidden;
 }
-.project:hover img{                       /* Hover effect on image in Project Section */
+.project:hover img{                             /* Hover effect on image in Project Section */
     transform: scale(1.1);
 }
-.project:hover .layer{                   /* Hover effect on overlay in Project Section */
+.project:hover .layer{                          /* Hover effect on overlay in Project Section */
     height: 100%;
 }
 .project img{                                   /* Image in Project Section */
@@ -314,7 +318,7 @@ h1{                                             /* Color of all Headings in page
 /*----------------------Contact Section -------------------------*/
 #contact{                                 
     margin-top: 100px;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -334,11 +338,11 @@ h1{                                             /* Color of all Headings in page
     margin-right: 15px;
     font-size: 25px;
 }
-h1.subtitle{                                      /* Subtitle in Contact Section */
+h1.subtitle{                                    /* Subtitle in Contact Section */
     margin-bottom: 60px;
     font-size: 40px;
 }
-#btn{                                    /* Contact Me button */
+#btn{                                           /* Contact Me button */
     background-color: #354a2f;
     color: white;
     padding: 10px 20px;
@@ -347,7 +351,7 @@ h1.subtitle{                                      /* Subtitle in Contact Section
     cursor: pointer;
     font-size: 20px;
 }
-#btn:hover{                              /* Hover effect on Contact Me button */
+#btn:hover{                                     /* Hover effect on Contact Me button */
     background-color: #2a3b1f;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
@@ -427,138 +431,4 @@ form input, form textarea{
 }
 nav .fa-bars, nav ul .fa-circle-xmark {
         display: none;
-    } 
-/*----------------------Media Queries -------------------------*/
-@media (max-width: 768px){ 
-    #home{                                          /* Header of the page */
-    background-image: url(images/about.png);
-    background-size: auto 60%;
-    background-position: center center;
-    background-repeat: no-repeat;
     }
-    #logo{
-        width: 30vw;
-        height: auto;
-        display: block;
-        margin: 0 auto;
-    }
-    .hometext{
-        margin-top: 120%;
-        width: 90%;
-        text-align: justify;
-    }
-    .hometext h1{
-        font-size: 25px;
-    }
-    #intro{
-        font-size: 16px;
-    }
-    #menu{
-        display: block;
-        font-size: 30px;
-        color: #0f2709;
-        cursor: pointer;
-        position: absolute;
-        left: 25px;
-        top: 30px;
-        z-index: 3;
-        transition: color 0.3s;
-    }
-    #sidemenu.open {
-        left: 0;
-    }
-    #menu.fa-bars {
-        display: block;
-    }
-    nav .fa-bars, nav ul .fa-circle-xmark {
-        display: block;
-    }
-    nav ul{
-        background: rgba(103, 124, 89, 0.8);
-        position: fixed;
-        top: 0;
-        left: -200px;
-        width: 150px;
-        height: 100vh;
-        padding-top: 30px;
-        z-index: 2;
-        transition: left 0.3s ease;
-    }
-    nav ul li{
-        display: block;
-        text-align: center;
-        margin: 15px;
-    }
-    nav ul li a{
-        color: #f5f5d5;
-        font-size: 16px;
-        margin: 30px 10px 0;
-        padding: 8px 10px;
-    }
-    .homebuttons{
-        display: flex;
-        justify-content: start;
-        margin-top: 20px;
-        gap: 20px;
-        font-size: 10px;
-    }
-    .homebuttons input{
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    #contactbtn, #cvbtn {
-    font-size: 15px;
-    } 
-    #about{
-        height: auto;
-    }
-    .row{
-        flex-direction: column;
-        height: auto;
-    }
-    .abtcol-1, .abtcol-2{
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .abtcol-2{
-        margin-top: 30px;
-        height: auto;
-    }
-    #aboutimg{
-        width: 90%;
-    }
-    .tab-titles{
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .tab-links{
-        margin-right: 20px;
-        margin-bottom: 10px;
-    }
-    #extra-curriculars{
-        height: auto;
-    }
-    #project{
-        height: auto;
-    }
-    .project img{
-        height: 300px;
-    }
-    #contact{
-        height: auto;
-    }
-    .row-contact{
-        flex-direction: column;
-    }
-    .contact-left, .contact-right{
-        flex-basis: 100%;
-        text-align: center;
-    }
-    .contact-right form input, .contact-right form textarea{
-        width: 80%;
-    }
-    .quote h2 {
-        font-size: 18px;
-        padding: 10px;
-    }
-}
