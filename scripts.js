@@ -53,10 +53,10 @@ document.querySelectorAll('#sidemenu a').forEach(link => {
 
     form.addEventListener('submit', e => {
         e.preventDefault();
+        form.reset(); // Clear the form fields
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
             if (response.ok) {
-                form.reset(); // Clear the form fields
                 console.log('Success!', response);
             } 
             else {
