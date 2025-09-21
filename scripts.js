@@ -55,8 +55,13 @@ document.querySelectorAll('#sidemenu a').forEach(link => {
         e.preventDefault();
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
-                console.log('Success!', response);
+            if (response.ok) {
                 form.reset(); // Clear the form fields
-            })
-            .catch(error => console.error('Error!', error.message));
-    });
+                console.log('Success!', response);
+            } 
+            else {
+                console.error('Error! Response not OK');
+            }
+        })
+        .catch(error => console.error('Error!', error.message));
+});
