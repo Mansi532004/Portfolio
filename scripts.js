@@ -53,10 +53,16 @@ document.querySelectorAll('#sidemenu a').forEach(link => {
 
     form.addEventListener('submit', e => {
         e.preventDefault();
-        form.reset(); // Clear the form fields
+        
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
             .then(response => {
             if (response.ok) {
+                form.reset(); // Clear the form fields
+                const msg = document.getElementById('form-message'); // Show confirmation
+                msg.classList.add('visible');
+                setTimeout(() => {
+                    msg.classList.remove('visible');
+                }, 2000);
                 console.log('Success!', response);
             } 
             else {
