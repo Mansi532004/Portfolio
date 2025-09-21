@@ -47,3 +47,13 @@ document.querySelectorAll('#sidemenu a').forEach(link => {
         menuToggle.classList.add('fa-bars');
     });
 });
+
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyeyTvwXroY7sdZOug9f1fRAuN9ZJwhj9pIdj377E3MdlJuvGUc8QSpVKDF_8F95w8/exec'
+    const form = document.forms['contact-form']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  });
