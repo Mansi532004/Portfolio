@@ -7,7 +7,7 @@ html {
     scroll-behavior: smooth;
 }
 body{                                           /* Body of the page */ 
-    background: linear-gradient(to bottom, #f5f5d5, #a3b68a);
+    background: linear-gradient(to bottom, #FFF6F1, #edd2c6);
     overflow-y: scroll;
 }
 #home{                                          /* Header of the page */
@@ -39,7 +39,7 @@ nav ul li a{                                    /* Links in Navigation Bar */
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    color: #354a2f;
+    color: #2F2A25;
     font-size: 20px;
     padding: 10px 15px;
     margin: 45px 15px 0;
@@ -55,7 +55,7 @@ nav ul li a::after{                             /* Underline effect on links in 
     bottom: 0;
     width: 0;
     height: 3px;
-    background: #354a2f;
+    background: #2F2A25;
     transition: all 0.5s ease-in-out;
 }
 nav ul li a:hover::after{                       /* Hover effect on underline of links in Navigation Bar */
@@ -63,7 +63,7 @@ nav ul li a:hover::after{                       /* Hover effect on underline of 
     left: 0;
 }
 h1{                                             /* Color of all Headings in page */
-    color: #253e1e;
+    color: #6B4F3F;
 }
 .hometext{                                      /* Text in home page */                        
     width: 50%;
@@ -77,6 +77,7 @@ h1{                                             /* Color of all Headings in page
 }
 #intro{                                         /* Paragraphs in home page */
     font-size: 20px;
+    color: #6B4F3F;
 }
 .homebuttons{                                   /* Buttons on home page */
     display: flex;
@@ -85,8 +86,8 @@ h1{                                             /* Color of all Headings in page
     gap: 20px;
 }
 #contactbtn{                                    /* Contact Me button */
-    background-color: #354a2f;
-    color: white;
+    background-color: #6B4F3F;
+    color: #FFFFFF;
     padding: 10px 20px;
     border: none;
     border-radius: 8px;
@@ -94,13 +95,13 @@ h1{                                             /* Color of all Headings in page
     font-size: 20px;
 }
 #contactbtn:hover{                              /* Hover effect on Contact Me button */
-    background-color: #2a3b1f;
+    background-color: #5C4336;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
-    box-shadow: 4px 4px 5px #677c59;
+    box-shadow: 4px 4px 5px #6B4F3F66;
 }
 #cvbtn{                                         /* Download CV button */
-    background-color: #354a2f;
+    background-color: #6B4F3F;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -109,10 +110,10 @@ h1{                                             /* Color of all Headings in page
     font-size: 20px;
 }
 #cvbtn:hover{                                   /* Hover effect on Download CV button */  
-    background-color: #2a3b1f;
+    background-color: #5C4336;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
-    box-shadow: 4px 4px 5px #677c59;
+    box-shadow: 4px 4px 5px #6B4F3F66;
 }
 
 /*----------------------About Section -------------------------*/
@@ -147,12 +148,12 @@ h1{                                             /* Color of all Headings in page
 }
 .about-text{                                    /* Paragraph in Right Column of About Section */
     font-size: 20px;
-    color: #0f2709;
+    color: #574032;
 }
 #aboutimg{                                      /* Image in Left Column of About Section */
     width: 70%;
     border-radius: 15px;
-    box-shadow: 4px 4px 5px #677c59, -4px 4px 5px #677c59, 4px -4px 5px #677c59, -4px -4px 5px #677c59;
+    box-shadow: 4px 4px 5px #6B4F3F66, -4px 4px 5px #6B4F3F66, 4px -4px 5px #6B4F3F66, -4px -4px 5px #6B4F3F66;
 }
 .tab-titles{                                    /* Tab titles in About Section */
     display: flex;
@@ -176,7 +177,7 @@ h1{                                             /* Color of all Headings in page
     bottom: -5px;
     width: 0;
     height: 3px;
-    background: #354a2f;
+    background: #2F2A25;
     transition: all 0.2s ease-in;
 }
 .tab-links.active-link::after{                  /* Active tab effect */
@@ -215,11 +216,12 @@ h1{                                             /* Color of all Headings in page
     margin-top: 50px;
 }
 .extra-curriculars-list div{
-    background-color: #354a2f;
-    color: white;
+    background-color: #F3E6DE;
+    color: #6B4F3F;
     padding: 50px;
     border-radius: 10px;
-    box-shadow: -4px 4px 5px #677c59, 0px 4px 5px #677c59;
+    border: #574032 4px solid;
+    box-shadow: -8px 8px 10px #6B4F3F66, 0px 8px 10px #6B4F3F66;
     transition: all 0.5s ease-in-out;
 }
 .extra-curriculars-list h2{
@@ -233,14 +235,14 @@ h1{                                             /* Color of all Headings in page
 }
 .extra-curriculars-list a{
     text-decoration: none;
-    color: white;
+    color: #6B4F3F;
     font-size: 15px;
     margin-top: 20px;
     display: inline-block;
 }
 .extra-curriculars-list div:hover{
-    box-shadow: -5px 5px 10px #253e1e, -2px 2px 8px #677c59;
-    background: #2a3b1f;
+    box-shadow: -5px 5px 10px #6B4F3F66, -2px 2px 8px #6B4F3F66;
+    background: #E7D3C7;
     transform: translateY(-10px);
 }
 
@@ -280,7 +282,7 @@ h1{                                             /* Color of all Headings in page
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgb(6, 44, 3),#aec398);
+    background: linear-gradient(#6B4F3F, #F3E6DE);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -304,12 +306,12 @@ h1{                                             /* Color of all Headings in page
 }
 .layer a{
     margin-top: 15px;
-    color:#2c3a15;
+    color:#5C4336;
     text-decoration: none;
     border-radius: 50%;
     font-size: 18px;
     line-height: 60px;
-    background: #96bc7e;
+    background: #F3E6DE;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -334,7 +336,7 @@ h1{                                             /* Color of all Headings in page
     font-size: 20px;
 }
 .contact-left p i{
-    color: #354a2f;
+    color: #574032;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -343,7 +345,7 @@ h1.subtitle{                                    /* Subtitle in Contact Section *
     font-size: 40px;
 }
 #btn{                                           /* Contact Me button */
-    background-color: #354a2f;
+    background-color: #5C4336;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -352,23 +354,23 @@ h1.subtitle{                                    /* Subtitle in Contact Section *
     font-size: 20px;
 }
 #btn:hover{                                     /* Hover effect on Contact Me button */
-    background-color: #2a3b1f;
+    background-color: #6B4F3F;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
-    box-shadow: 4px 4px 5px #677c59;
+    box-shadow: 4px 4px 5px #6B4F3F66;
 }
 .social-icons{
     margin-top: 30px;
 }
 .social-icons a{
     text-decoration: none;
-    color: #354a2f;
+    color: #574032;
     font-size: 30px;
     margin-right: 15px;
     display: inline-block;
 }
 .social-icons a:hover{
-    color: #2a3b1f;
+    color: #6B4F3F;
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
 }
@@ -376,7 +378,7 @@ h1.subtitle{                                    /* Subtitle in Contact Section *
     width: 100%;
 }
 ::placeholder{
-        color: #354a2f;
+        color: #032c09;
         opacity: 1; 
 }
 form input, form textarea{
@@ -388,14 +390,14 @@ form input, form textarea{
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     resize: none;
-    background-color: #96bc7e;
+    background-color: #F3E6DE;
 }
 #form-message{
     min-height: 24px;
     margin-top: 20px;
     font-size: 20px;
     visibility: hidden;
-    color:rgb(4, 63, 13);
+    color: #032c09;
     transition: opacity 0.3s;
     opacity: 0;
 }
@@ -407,8 +409,8 @@ form input, form textarea{
     width:100%;
     text-align: center;
     padding: 20px 0;
-    background: #253e1e;
-    color: antiquewhite;
+    background: #574032;
+    color: #F3E6DE;
     font-weight: 200;
 }
 .back-to-home {
@@ -417,7 +419,7 @@ form input, form textarea{
     bottom: 30px;
     width: 50px;
     height: 50px;
-    background: #253e1e;
+    background: #5C4336;
     color: #fff;
     display: flex;
     align-items: center;
